@@ -1,0 +1,245 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+}
+body{
+    background-image: url(https://fondosmil.com/fondo/27342.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.header{
+    display: flex;
+    background: #ff27;
+    width: 100%;
+}
+
+img{
+    margin: auto;
+}
+
+article p{
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 3px 3px 4px black;
+}
+article{
+    width: 80%;
+    margin: 20px;
+    border-radius: 10%;
+    border: 10px solid #ff2;
+}
+article{
+    background: #65c7;
+    transition: transform .5s, background-color .5s;
+    display: flex;
+    flex-flow: row wrap;
+}
+p{
+    padding: 20px;
+}
+article:hover{
+    transform: translatex(20px);
+    background: #000a;
+}
+a{
+    text-decoration: none;
+    color: #64f;
+}
+
+h2{
+    font-family: 'Potta One', cursive;
+    margin: auto;
+    color: #008f39;
+    font-size: 40px;
+    text-shadow: 3px 3px 4px black;
+}
+ol li{
+    color: #fff;
+    font-size: 30px;
+}
+ul li{
+    color: #fff;
+    font-size: 30px;
+}
+ol{
+    padding-left: 100px;
+}
+
+ol li{
+    border-bottom: 5px solid #f54;
+}
+
+.rick-img{
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20%;
+}
+
+.img-container{
+    display: flex;
+    width: 100%;
+}
+.morty-img{
+    width: 360px;
+    height: 450px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15%;
+}
+.summer-img{
+    width: 360px;
+    height: 450px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15%;
+}
+.beth-img{
+    width: 360px;
+    height: 450px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15%;
+}
+.jerry-img{
+    width: 360px;
+    height: 450px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15%;
+}
+
+.reparto{
+    border-radius: 5%;
+}
+.header{
+    border-bottom: 5px solid #51d1f6;
+}
+
+.aside{
+    display: flex;
+    background: #333d;
+    width: 20%;
+    height: 1000px;
+    padding-top: 30px;
+    padding-right: 30px;
+    position: sticky;
+    top: 0;
+}
+
+.main-aside__container{
+    display: flex;
+    flex-direction: row;
+}
+
+ul li a{
+    color: #fff;
+    transition: color .5s;
+}
+aside ul{
+    list-style: none;
+}
+
+ul li a:hover{
+    color: darkred;
+}
+
+aside ul li{
+    transition: transform .5s;
+    margin: 5px;
+}
+aside ul li:hover{
+    transform: translateX(20px);
+}
+
+@media screen and (max-width: 845px){
+    body{
+        background-image: url(https://wallpaperaccess.com/full/793614.jpg);
+    }
+
+    .main-aside__container{
+        display: flex;
+        flex-direction: column;
+        width: 620px;
+        min-width: 620px;
+    }
+    article{
+        background: #000a;
+    }
+    .main{
+        order: 2;
+        width: 100%;
+        min-width: 500px;
+    }
+    aside{
+        visibility: hidden;
+        order: 3;
+    }
+}
+
+@media screen and (max-width: 930px) and (min-width: 700px){
+    
+    .main-aside__container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .aside{
+        display: flex;
+        flex-direction: row;
+        order: 1;
+        height: 100px;
+        width: 100%;
+        border-bottom: 5px solid #51d1f6;
+        align-items: center;
+        flex-basis: 100px;
+
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    ul li{
+        margin: 10px;
+    }
+
+    .main{
+        order: 2;
+    }
+
+    aside ul li:hover{
+        transform: translateX(0px);
+    }
+
+    ul li a:hover{
+        color: #51d1f6;
+    }
+
+    aside ul li{
+        margin: 20px;
+    }
+
+    aside ul li:last-child{
+        line-height: 20px;
+    }
+    .main-aside__container{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        min-width: 700px;
+    }
+    
+}
+
+
+
